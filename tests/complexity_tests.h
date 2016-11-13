@@ -12,10 +12,12 @@ public:
 
     CountingDummy(const CountingDummy& other) {
         ++couter_;
+        dummy_data_ = other.dummy_data_;
     }
 
     CountingDummy& operator=(const CountingDummy& other) {
         ++couter_;
+        dummy_data_ = other.dummy_data_;
         return *this;
     }
 
